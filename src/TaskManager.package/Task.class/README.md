@@ -1,0 +1,1 @@
+I am a simple Task entity class that can store what to do.

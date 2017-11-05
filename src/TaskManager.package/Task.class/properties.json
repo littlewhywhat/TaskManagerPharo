@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "RomanVaivod 11/5/2017 21:20",
+	"super" : "Object",
+	"category" : "TaskManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"what"
+	],
+	"name" : "Task",
+	"type" : "normal"
+}

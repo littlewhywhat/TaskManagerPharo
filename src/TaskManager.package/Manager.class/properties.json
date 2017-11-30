@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TestCase",
-	"category" : "TaskManager-Tests",
+	"super" : "Object",
+	"category" : "TaskManager",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "TaskTest",
+	"instvars" : [
+		"tasks"
+	],
+	"name" : "Manager",
 	"type" : "normal"
 }

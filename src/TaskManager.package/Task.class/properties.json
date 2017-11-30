@@ -6,7 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"what"
+		"name",
+		"description",
+		"deadline",
+		"difficulty"
 	],
 	"name" : "Task",
 	"type" : "normal"

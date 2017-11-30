@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "VladimirGenkin 12/1/2017 14:14",
+	"super" : "Object",
+	"category" : "TaskManager-Model-BusinessObject",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"task"
+	],
+	"name" : "TaskBO",
+	"type" : "normal"
+}

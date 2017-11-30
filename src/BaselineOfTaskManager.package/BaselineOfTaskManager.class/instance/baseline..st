@@ -3,6 +3,7 @@ baseline: spec
 	"standard baseline method to describe dependencies of TaskManager package"
 	<baseline>
 	
-  	spec for: #common do: [
-        spec package: 'TaskManager'.
-        spec group: 'default' with: #('TaskManager') ]
+  spec for: #common do: [
+    spec package: 'TaskManager-Data'.
+    spec package: 'TaskManager-Model'.
+    spec group: 'default' with: #('TaskManager-Data' 'TaskManager-Model')].

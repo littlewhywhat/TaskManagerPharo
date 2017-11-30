@@ -1,0 +1,1 @@
+I am baseline for TaskManager project.

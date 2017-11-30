@@ -1,0 +1,1 @@
+I am a TaskVO - object containing values for creation of Task.

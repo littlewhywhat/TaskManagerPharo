@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "RomanVaivod 12/1/2017 20:39",
+	"super" : "TestCase",
+	"category" : "TaskManager-Model-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TaskVOTest",
+	"type" : "normal"
+}

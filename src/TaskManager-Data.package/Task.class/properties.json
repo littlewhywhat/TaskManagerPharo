@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "RomanVaivod 11/5/2017 21:20",
+	"super" : "Object",
+	"category" : "TaskManager-Data-Entity",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"description",
+		"id"
+	],
+	"name" : "Task",
+	"type" : "normal"
+}

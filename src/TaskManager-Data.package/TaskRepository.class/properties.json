@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "RomanVaivod 11/30/2017 23:15",
+	"super" : "Object",
+	"category" : "TaskManager-Data-DAO",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tasks"
+	],
+	"name" : "TaskRepository",
+	"type" : "normal"
+}

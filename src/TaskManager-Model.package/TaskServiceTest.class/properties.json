@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "TaskManager-Model-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "TaskServiceTest",
+	"type" : "normal"
+}

@@ -9,3 +9,7 @@ Task Manager 1.0.0 simplify a process of editing a todo list. In any time it's p
 ## Build
 
 Pharo 6.1
+
+## Status
+
+please see weekly logs on dedicated [wikipage](https://github.com/littlewhywhat/TaskManager/wiki/Weekly-Logs).

@@ -6,4 +6,5 @@ baseline: spec
   spec for: #common do: [
     spec package: 'TaskManager-Data'.
     spec package: 'TaskManager-Model'.
-    spec group: 'default' with: #('TaskManager-Data' 'TaskManager-Model')].
+    spec package: 'TaskManager-Presentation'.
+    spec group: 'default' with: #('TaskManager-Data' 'TaskManager-Model' 'TaskManager-Presentation')].

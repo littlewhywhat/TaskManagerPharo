@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "RomanVaivod 12/8/2017 22:34",
+	"super" : "ComposableModel",
+	"category" : "TaskManager-Presentation-SpecUI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"service",
+		"buttonAdd",
+		"labelDescription",
+		"textInputDescription"
+	],
+	"name" : "AddTaskModel",
+	"type" : "normal"
+}

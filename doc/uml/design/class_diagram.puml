@@ -1,0 +1,74 @@
+@startuml
+
+title Class Diagram
+
+class TaskRepository {
+.. searching ..
+ +findAll(): Collection<Task>
+ +findById(Task): Task
+.. adding ..
+ +add(Task): void
+}
+
+class TaskService {
+.. finding ..
+ +findAll(): Collection<TaskBO>
+.. adding ..
+ +save(TaskVO): TaskBO
+}
+
+class Task {
+- id: Long
+- description: String
+..
+}
+
+class TaskBO {
+.. accessing ..
++ description(): String
++ id(): Long
+}
+
+class TaskVO {
+- id: Long
+- description: String
+..
+}
+
+class ComposableModel {
+..defaultSpec..
+{static} {abstract} + defaultSpec(): SpecLayout
+..api..
++ {abstract} title(): String
+..initialization..
++ {abstract} initialize(): void
++ {abstract} initializePresenter(): void
++ {abstract} initializeWidgets(): void
+}
+
+class AddTaskModel {
+.. accessing-widgets ..
++ buttonAdd(): ButtonModel
++ buttonEdit(): ButtonModel
++ buttonRemove(): ButtonModel
++ textInputDescription(): TextInputModel
++ listTasks(): ListModel
+}
+
+class ListTasksModel {
+.. accessing-widgets ..
++ buttonAdd(): ButtonModel
++ labelDescription(): LabelModel
++ textInputDescription(): TextInputModel
+}
+
+TaskService *--> "- repo " TaskRepository
+TaskBO *--> "- task " Task
+TaskRepository --> "0..*" Task : has
+TaskService --> "0..*" TaskBO : has
+AddTaskModel --|> ComposableModel
+ListTasksModel --|> ComposableModel
+AddTaskModel *--> "- service " TaskService
+ListTasksModel *--> "- service " TaskService
+
+@enduml

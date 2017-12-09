@@ -1,0 +1,1 @@
+I am a representation of Task with business logic.

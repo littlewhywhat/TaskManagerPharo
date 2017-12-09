@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "RomanVaivod 11/30/2017 23:40",
+	"super" : "BaselineOf",
+	"category" : "BaselineOfTaskManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "BaselineOfTaskManager",
+	"type" : "normal"
+}

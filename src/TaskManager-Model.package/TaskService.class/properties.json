@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "RomanVaivod 12/1/2017 20:39",
+	"super" : "Object",
+	"category" : "TaskManager-Model-Service",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"repo"
+	],
+	"name" : "TaskService",
+	"type" : "normal"
+}

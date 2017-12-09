@@ -1,0 +1,39 @@
+@startuml
+
+title "View tasks"
+
+participant User
+
+User -> ":GUI" as GUI : viewTasks
+
+activate GUI
+
+GUI -> "service\n:TaskService" as service
+deactivate GUI
+activate service
+service ->> "repo\n:TaskRepository" as repo : tasks = findAll():List<Task>
+activate repo
+
+service <<-- repo
+deactivate repo
+
+service -->> "tasks\n:List<Task>" as tasks
+service -->> "tasksBO\n:List<TaskBO>" as tasksBO
+loop task in tasks
+service -> "taskBO\n:TaskBO" as taskBO
+service ->> taskBO : wrap(task)
+activate taskBO
+service <<-- taskBO
+deactivate taskBO
+service -> tasksBO : add(taskBO)
+activate tasksBO
+tasksBO -> service
+deactivate tasksBO
+end
+service ->> GUI : updateGUI(tasksBO)
+activate GUI
+GUI -->> service
+deactivate GUI
+deactivate service
+
+@enduml

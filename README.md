@@ -1,4 +1,4 @@
-Task Manager [![Build Status](https://travis-ci.org/littlewhywhat/TaskManager.svg?branch=dev)](https://travis-ci.org/littlewhywhat/TaskManager)
+Task Manager 0.1.0 [![Build Status](https://travis-ci.org/littlewhywhat/TaskManager.svg?branch=dev)](https://travis-ci.org/littlewhywhat/TaskManager)
 ===
 The basic todo list that everyone once used in their life, were several lines written on a piece of paper. It's simple and fast to create.
 
@@ -10,6 +10,14 @@ Task Manager 1.0.0 simplify a process of editing a todo list. In any time it's p
 
 Pharo 6.1
 
+## Run
+
+load packages from repository and run this command in the playground:
+
+```smalltalk
+   ListTasksModel new openWithSpec.
+```
+
 ## Status
 
-please see weekly logs on dedicated [wikipage](https://github.com/littlewhywhat/TaskManager/wiki/Weekly-Logs).
+please find weekly logs and features plan on [wiki](https://github.com/littlewhywhat/TaskManager/wiki).

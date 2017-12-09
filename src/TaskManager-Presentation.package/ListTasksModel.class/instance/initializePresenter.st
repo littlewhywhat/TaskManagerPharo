@@ -2,23 +2,19 @@ initialization
 initializePresenter
 	"initialize presenter"
 
-   buttonAdd action: [ 
-		| addTaskModel |
-		addTaskModel := AddTaskModel new.
+   buttonAdd action: [ self addTask: nil asTaskBO ].
 
-		addTaskModel service: service.
-		addTaskModel openWithSpec.
-
-		addTaskModel buttonAdd whenActionPerformedDo: [ 
-			addTaskModel window delete.
-			listTasks items: service findAll
-		].
+	buttonEdit action: [ 
+		self addTask: listTasks selectedItem deepCopy.
+		self updateTaskOverview ].
 	
-		addTaskModel window modalRelativeTo: self.
+	buttonRemove action: [ 
+		self removeTask: listTasks selectedItem deepCopy.
 	].
 
 	listTasks whenSelectedItemChanged: [ 
-		(listTasks selectedItem) notNil
-			ifTrue: [textInputDescription text: listTasks selectedItem description ]
-			ifFalse: [textInputDescription text: nil. buttonRemove enabled: false. buttonEdit enabled: false]
+		self updateTaskButtons.
+		self updateTaskOverview
 	].
+
+  self updateTaskButtons.

@@ -12,11 +12,7 @@ initializeWidgets
 	
 	listTasks
 		items: (service findAll);
-		displayBlock: [ :item |
-			(item description size) > 16
-				ifTrue: [ ((item description) copyFrom: 1 to: 16) , ' ...']
-				ifFalse: [ item description ].
-		].
+		displayBlock: [ :item | item name ].
 	
 	buttonAdd
 		label: 'Add Task'.

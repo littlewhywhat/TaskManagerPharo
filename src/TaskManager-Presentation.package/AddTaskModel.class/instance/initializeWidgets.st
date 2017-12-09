@@ -3,6 +3,9 @@ initializeWidgets
 	"widget instantiation"
 
 	buttonAdd := self newButton.
+	buttonCancel := self newButton.
+	labelName := self newLabel.
+	textInputName := self newTextInput.
 	labelDescription := self newLabel.
 	textInputDescription := self newTextInput.
 	
@@ -11,15 +14,27 @@ initializeWidgets
 	buttonAdd
 		label: 'Add Task'.
 
-   labelDescription 
-		label: 'Description'.
-		
-	textInputDescription
-		text: nil;
+	buttonCancel
+		label: 'Cancel'.
+
+	labelName
+		label: 'Name'.
+
+	textInputName
 		autoAccept: true.
-		
+
+   labelDescription
+		label: 'Description'.
+
+	textInputDescription
+		autoAccept: true.		
+
 	"focus order"
 	
-	self focusOrder 
+	self focusOrder
+		add: textInputName; 
 		add: textInputDescription;
-		add: buttonAdd.
+		add: buttonAdd;
+		add: buttonCancel.
+		
+	self updateWidgets.

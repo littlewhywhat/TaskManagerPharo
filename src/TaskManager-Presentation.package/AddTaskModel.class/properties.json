@@ -7,7 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"service",
+		"taskBO",
 		"buttonAdd",
+		"buttonCancel",
+		"labelName",
+		"textInputName",
 		"labelDescription",
 		"textInputDescription"
 	],

@@ -7,7 +7,8 @@ save: aTaskVO
 		id: aTaskVO id;
 		description: aTaskVO description;
 		name: aTaskVO name;
-		date: aTaskVO date.
+		date: aTaskVO date;
+		completed: aTaskVO completed.
 	repo save: aTask.
 	
 	^ TaskBO new wrap: aTask.

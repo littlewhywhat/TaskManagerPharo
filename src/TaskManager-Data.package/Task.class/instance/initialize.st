@@ -4,3 +4,5 @@ initialize
 
 	description  := ''.
 	name         := ''.
+	date         := ''.
+	completed    := false.

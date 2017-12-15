@@ -12,6 +12,14 @@ initializePresenter
 		self removeTask: listTasks selectedItem deepCopy.
 	].
 
+	buttonCompleted action: [ 
+		((listTasks selectedItem) completed) 
+			ifTrue: [ (listTasks selectedItem) completed: false ]
+			ifFalse: [ (listTasks selectedItem) completed: true ].
+		self updateTaskOverview.
+		listTasks resetSelection
+	].
+
 	listTasks whenSelectedItemChanged: [ 
 		self updateTaskButtons.
 		self updateTaskOverview

@@ -9,7 +9,8 @@
 		"name",
 		"date",
 		"description",
-		"id"
+		"id",
+		"completed"
 	],
 	"name" : "Task",
 	"type" : "normal"

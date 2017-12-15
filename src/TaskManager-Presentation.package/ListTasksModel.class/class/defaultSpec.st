@@ -10,6 +10,12 @@ defaultSpec
 		] top: 0 bottom: 0.9;
 		newRow: [ :row | row 
 			newColumn: [ :column | column add: #listTasks] left: 0 right: 0.5;
-			newColumn: [ :column | column add: #textInputDescription ] left: 0.5 right: 0
+			newColumn: [ :column | column
+				newRow: [ :anotherRow | anotherRow add: #textInputDescription ] top: 0 bottom: 0.2;
+				newRow: [ :anotherRow | anotherRow 
+					newColumn: [ :anotherColumn | anotherColumn add: #textInputDate ] left: 0 right: 0.5;
+					newColumn: [ :anotherColumn | anotherColumn add: #buttonCompleted ] left: 0.5 right: 0
+				] top: 0.8 bottom: 0
+			] left: 0.5 right: 0
 		] top: 0.1 bottom: 0;
 		yourself

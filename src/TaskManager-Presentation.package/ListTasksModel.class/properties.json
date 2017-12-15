@@ -11,7 +11,9 @@
 		"buttonEdit",
 		"buttonRemove",
 		"textInputDescription",
-		"listTasks"
+		"textInputDate",
+		"listTasks",
+		"buttonCompleted"
 	],
 	"name" : "ListTasksModel",
 	"type" : "normal"

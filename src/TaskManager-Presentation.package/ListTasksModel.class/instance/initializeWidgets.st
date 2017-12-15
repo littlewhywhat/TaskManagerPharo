@@ -5,6 +5,7 @@ initializeWidgets
 	listTasks := self newList.
 	buttonAdd := self newButton.
 	textInputDescription := self newTextInput.
+	textInputDate := self newTextInput.
 	buttonEdit := self newButton.
 	buttonRemove := self newButton.
 	
@@ -18,6 +19,10 @@ initializeWidgets
 		label: 'Add Task'.
 	
 	textInputDescription
+		text: nil;
+		disable.
+		
+	textInputDate
 		text: nil;
 		disable.
 	
@@ -34,5 +39,6 @@ initializeWidgets
 		add: buttonRemove;
 		add: buttonEdit;
 		add: listTasks;
-		add: textInputDescription.
+		add: textInputDescription;
+		add: textInputDate 
 	

@@ -1,15 +1,10 @@
-adding
-save: aTaskVO
-	"Saves a task"
-	
+removing
+remove: aTaskVO
+
 	| aTask |
 	aTask := Task new
 		id: aTaskVO id;
 		description: aTaskVO description;
 		name: aTaskVO name;
 		date: aTaskVO date.
-	repo save: aTask.
-	
-	^ TaskBO new wrap: aTask.
-
-	
+	repo remove: aTask.

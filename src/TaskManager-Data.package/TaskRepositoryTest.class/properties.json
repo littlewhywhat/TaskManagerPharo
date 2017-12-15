@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"notEmptyRepository",
+		"aTaskWithIdZero"
+	],
 	"name" : "TaskRepositoryTest",
 	"type" : "normal"
 }

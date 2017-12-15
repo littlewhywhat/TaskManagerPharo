@@ -3,5 +3,5 @@ testInitialize
    | repo task |
 	task := Task new.
 	repo := TaskRepository new.
-	task := (repo findById: task).
+	task := (repo find: task).
 	self assert: task equals: nil.

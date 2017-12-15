@@ -1,0 +1,32 @@
+@startuml
+
+title Component Diagram
+
+[LocalTaskService] as local
+[TaskSpecUI] as spec  
+[TaskRepository] as repo
+[RemoteTaskService] as remote
+[TaskServer] as server
+component [TaskManager] as context {
+  [TaskService] as service
+}
+interface ITaskManager as icontext
+interface ITaskREST as rest
+interface ITaskRepository as irepo
+interface ITaskService as iservice
+
+context -down- icontext
+service -- iservice
+spec -up-( icontext
+spec -up-( iservice
+server -up-( icontext
+server -up-( iservice
+
+remote -left-|> service
+local --|> service
+
+remote --( rest
+server -- rest
+local -up-( irepo
+repo - irepo
+@enduml

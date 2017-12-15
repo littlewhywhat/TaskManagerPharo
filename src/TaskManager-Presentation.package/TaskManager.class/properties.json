@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "RomanVaivod 12/14/2017 22:57",
+	"super" : "Object",
+	"category" : "TaskManager-Presentation-Application",
+	"classinstvars" : [
+		"uniqueInstance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"service",
+		"repository",
+		"present",
+		"services",
+		"repositories",
+		"presents"
+	],
+	"name" : "TaskManager",
+	"type" : "normal"
+}

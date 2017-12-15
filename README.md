@@ -15,7 +15,7 @@ Pharo 6.1
 load packages from repository and run this command in the playground:
 
 ```smalltalk
-   ListTasksModel new openWithSpec.
+TaskManager run.
 ```
 
 ## Status

@@ -1,14 +1,13 @@
 adding
-save: aTaskVO
+add: aTaskVO
 	"Saves a task"
 	
 	| aTask |
-	aTask := Task new
-		id: aTaskVO id;
+	aTask := Task new 
 		description: aTaskVO description;
 		name: aTaskVO name;
 		date: aTaskVO date.
-	repo save: aTask.
+	repo add: aTask.
 	
 	^ TaskBO new wrap: aTask.
 

@@ -6,6 +6,6 @@ testEquals
   anotherTask := Task new.
   self assert: task = anotherTask equals: true.
   task description: description.
-  self assert: task = anotherTask equals: false.
+  self deny: task = anotherTask.
   anotherTask description: description.
   self assert: task = anotherTask equals: true.

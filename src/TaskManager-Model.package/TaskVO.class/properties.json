@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"description",
-		"id"
+		"id",
+		"name",
+		"date"
 	],
 	"name" : "TaskVO",
 	"type" : "normal"

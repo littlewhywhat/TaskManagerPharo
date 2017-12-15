@@ -7,8 +7,8 @@ testFindAll
 
    service := TaskService new.
 
-   taskBO := service save: taskVO.
-   anotherTaskBO := service save: anotherTaskVO.
+   taskBO := service add: taskVO.
+   anotherTaskBO := service add: anotherTaskVO.
 
    tasks := OrderedCollection new.
    tasks add: taskBO; add: anotherTaskBO.

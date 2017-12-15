@@ -1,0 +1,1 @@
+I am a wrapper for NeoJSONReader. I can read class from JSON if it implements putMappingsToReadJSONin.

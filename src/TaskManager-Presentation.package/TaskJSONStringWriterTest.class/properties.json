@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "TaskManager-Presentation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"writer",
+		"taskVO",
+		"taskBO",
+		"contentsVO",
+		"contentsBO",
+		"contentsArrayBO",
+		"tasksBO"
+	],
+	"name" : "TaskJSONStringWriterTest",
+	"type" : "normal"
+}

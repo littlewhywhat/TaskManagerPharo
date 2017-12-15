@@ -1,0 +1,1 @@
+I am a TaskJSONStringWriter. I write TaskBO, array of TaskBO, TaskVO to strings in format JSON.

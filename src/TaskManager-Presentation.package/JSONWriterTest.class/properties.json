@@ -1,16 +1,17 @@
 {
-	"commentStamp" : "RomanVaivod 12/1/2017 20:39",
+	"commentStamp" : "RomanVaivod 1/5/2018 03:55",
 	"super" : "TestCase",
-	"category" : "TaskManager-Model-Tests",
+	"category" : "TaskManager-Presentation-Tests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"taskBO",
 		"taskVO",
 		"contentsVO",
 		"writer",
-		"reader"
+		"contentsBO"
 	],
-	"name" : "TaskVOTest",
+	"name" : "JSONWriterTest",
 	"type" : "normal"
 }

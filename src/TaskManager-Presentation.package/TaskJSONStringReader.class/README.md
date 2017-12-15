@@ -1,0 +1,1 @@
+I am a TaskJSONStringReader. I read TaskBO, array of TaskBO, TaskVO from strings in format JSON.

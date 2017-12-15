@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "TestCase",
+	"category" : "TaskManager-Presentation-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reader",
+		"taskVO",
+		"taskBO",
+		"contentsVO",
+		"contentsBO",
+		"contentsArrayBO",
+		"tasksBO"
+	],
+	"name" : "TaskJSONStringReaderTest",
+	"type" : "normal"
+}

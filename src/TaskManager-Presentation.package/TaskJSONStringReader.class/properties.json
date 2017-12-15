@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "RomanVaivod 1/5/2018 04:42",
+	"super" : "Object",
+	"category" : "TaskManager-Presentation-JSON",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"reader"
+	],
+	"name" : "TaskJSONStringReader",
+	"type" : "normal"
+}

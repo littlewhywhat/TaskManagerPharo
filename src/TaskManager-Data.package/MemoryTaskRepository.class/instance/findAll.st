@@ -1,0 +1,3 @@
+searching
+findAll
+	^ Task selectAll

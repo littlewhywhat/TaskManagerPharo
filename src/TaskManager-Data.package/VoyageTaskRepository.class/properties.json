@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "MemoryTaskRepository",
+	"name" : "VoyageTaskRepository",
 	"type" : "normal"
 }

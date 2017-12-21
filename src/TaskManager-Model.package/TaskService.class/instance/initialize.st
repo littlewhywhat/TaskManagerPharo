@@ -2,4 +2,4 @@ initialization
 initialize
 	"initializes repository"
 
-	repo := MemoryTaskRepository new.
+	repo := VoyageTaskRepository new.

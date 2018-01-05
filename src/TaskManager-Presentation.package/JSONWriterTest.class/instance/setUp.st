@@ -1,6 +1,7 @@
 starting
 setUp
-  | task id description name date |
+  | completed task id description name date |
+  completed := false.
   writer := JSONWriter new.
   name := 'task 1'.
   description := 'difficult task'.
@@ -10,4 +11,4 @@ setUp
   taskVO := TaskVO new id: id; name: name; description: description; date: date.
   taskBO := TaskBO new wrap: task.
   contentsVO := '{ "description" : "', description,'", "id" : ', id asString, ', "name" : "', name ,'", "date" : "', date printString, '" }'.
-  contentsBO := '{ "task" : { "name" : "', name , '", "date" : "', date printString, '", "description" : "', description,'", "id" : ', id asString, ' } }'.
+  contentsBO := '{ "task" : { "name" : "', name , '", "date" : "', date printString, '", "description" : "', description,'", "id" : ', id asString, ', "completed" : ', completed asString ,' } }'.

@@ -1,6 +1,7 @@
 running
 setUp
-  | task id description name date |
+  | completed task id description name date |
+  completed := false.
   name := 'task 1'.
   description := 'difficult task'.
   date := Date today.
@@ -9,4 +10,4 @@ setUp
   taskBO := TaskBO new wrap: task.
   reader := NeoJSONReader new.
   writer := NeoJSONWriter new.
-  contentsBO := '{ "task" : { "name" : "', name , '", "date" : "', date printString, '", "description" : "', description,'", "id" : ', id asString, ' } }'.
+  contentsBO := '{ "task" : { "name" : "', name , '", "date" : "', date printString, '", "description" : "', description,'", "id" : ', id asString, ', "completed" : ', completed asString ,' } }'.

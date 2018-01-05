@@ -1,5 +1,5 @@
-api
-setUpConnection
+initialization
+initialize
 	| repository |
 	
 	repository := VOMemoryRepository new.

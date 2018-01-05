@@ -2,7 +2,7 @@ initialization
 initializePresenter
 	"initialize presenter"
 
-   buttonAdd action: [ self addTask: nil asTaskBO ].
+   buttonAdd action: [ self addTask: TaskBO default ].
 
 	buttonEdit action: [ 
 		self addTask: listTasks selectedItem deepCopy.

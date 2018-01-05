@@ -1,5 +1,5 @@
 initialization
 initialize
 
-	taskBO := nil asTaskBO.
+	taskBO := TaskBO default.
 	super initialize.
